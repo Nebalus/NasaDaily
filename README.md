@@ -1,6 +1,11 @@
 # NasaDaily
 
+> [!WARNING]
+> 🚧 **Work in Progress** — This project is still under active development. Features may be incomplete or subject to change.
+
 NasaDaily is a Java 21 desktop application for fetching, downloading, and managing NASA's **Astronomy Picture of the Day (APOD)**. It ships with both a full-featured CLI and a dark-themed Swing GUI, backed by a local SQLite cache to prevent redundant API calls.
+
+![NasaDaily app demo](app_demo.png)
 
 ---
 
