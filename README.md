@@ -21,7 +21,7 @@ NasaDaily is a Java 21 application that allows you to easily fetch, download, an
 
 ### Building the Project
 
-Use Maven to build the project and download the required dependencies:
+Since the compiled files (the `target/` directory) are not synced to the Git commit history, you must build the project yourself before running it. Use Maven to compile the code and generate the `.jar` file:
 
 ```bash
 mvn clean install
