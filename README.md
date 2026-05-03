@@ -34,26 +34,26 @@ You can run the application either in CLI mode or GUI mode.
 #### Launching the GUI
 
 ```bash
-java -jar target/NasaDaily-0.0.1-SNAPSHOT.jar --gui
+java -jar target/NasaDaily-1.0.0.jar --gui
 ```
 
 #### Command Line Interface
 
 ```bash
 # Import today's APOD
-java -jar target/NasaDaily-0.0.1-SNAPSHOT.jar
+java -jar target/NasaDaily-1.0.0.jar
 
 # Import a single historical APOD
-java -jar target/NasaDaily-0.0.1-SNAPSHOT.jar --date 2024-01-01
+java -jar target/NasaDaily-1.0.0.jar --date 2024-01-01
 
 # Import a date range
-java -jar target/NasaDaily-0.0.1-SNAPSHOT.jar --from 2024-01-01 --to 2024-01-31
+java -jar target/NasaDaily-1.0.0.jar --from 2024-01-01 --to 2024-01-31
 
 # Run daily import at the specified time (e.g., 8:00 AM)
-java -jar target/NasaDaily-0.0.1-SNAPSHOT.jar --schedule 08:00
+java -jar target/NasaDaily-1.0.0.jar --schedule 08:00
 
 # Set a custom rate limit (seconds between downloads, default is 30)
-java -jar target/NasaDaily-0.0.1-SNAPSHOT.jar --rate-limit 15 --from 2024-01-01 --to 2024-01-05
+java -jar target/NasaDaily-1.0.0.jar --rate-limit 15 --from 2024-01-01 --to 2024-01-05
 ```
 
 ## Technologies Used
