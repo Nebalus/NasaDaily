@@ -148,32 +148,6 @@ NasaDaily uses a local **SQLite database** (`.apod_cache/apod.db`) to cache all 
 
 ---
 
-## Project Structure
-
-```
-NasaDaily/
-├── src/main/java/dev/nebalus/nasadaily/
-│   ├── ApodCore.java           # Main entry point, CLI argument parsing, scheduler
-│   ├── ApodApp.java            # (Reserved for future use)
-│   ├── Client.java             # NASA APOD API client with cache integration
-│   ├── Entry.java              # Immutable record: date, title, mediaType, url, hdurl, explanation
-│   ├── Importer.java           # Downloads images / saves .url files, enforces rate limiting
-│   ├── helper/
-│   │   └── FileHelper.java     # Filename sanitization and extension extraction utilities
-│   ├── repository/
-│   │   ├── ApodApiRepository.java   # Raw HTTP GET helper
-│   │   └── CacheRepository.java     # SQLite read/write, bulk cache lookup, JSON migration
-│   └── ui/
-│       ├── FetcherUI.java      # Main Swing window (dark theme, layout, event wiring)
-│       ├── CalendarPanel.java  # Interactive calendar with imported-date highlighting
-│       ├── ImagePanel.java     # Async image rendering panel
-│       └── SwingLogHandler.java # JLogger handler that appends to the GUI log area
-├── pom.xml
-└── README.md
-```
-
----
-
 ## Technologies Used
 
 | Library | Purpose |
