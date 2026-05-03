@@ -1,7 +1,7 @@
-package dev.nebalus.apod;
+package dev.nebalus.nasadaily;
 
-import dev.nebalus.apod.repository.CacheRepository;
-import dev.nebalus.apod.ui.FetcherUI;
+import dev.nebalus.nasadaily.repository.CacheRepository;
+import dev.nebalus.nasadaily.ui.FetcherUI;
 import dev.nebalus.library.jlogger.LogLevel;
 import dev.nebalus.library.jlogger.Logger;
 import dev.nebalus.library.jlogger.formatter.ColorLineFormatter;

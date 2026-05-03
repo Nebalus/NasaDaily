@@ -1,6 +1,6 @@
-package dev.nebalus.apod.ui;
+package dev.nebalus.nasadaily.ui;
 
-import dev.nebalus.apod.Entry;
+import dev.nebalus.nasadaily.Entry;
 
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;

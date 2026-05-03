@@ -1,4 +1,4 @@
-package dev.nebalus.apod;
+package dev.nebalus.nasadaily;
 
 public class ApodApp {
 }

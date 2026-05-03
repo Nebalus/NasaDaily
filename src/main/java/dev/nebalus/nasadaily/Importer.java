@@ -1,6 +1,6 @@
-package dev.nebalus.apod;
+package dev.nebalus.nasadaily;
 
-import dev.nebalus.apod.helper.FileHelper;
+import dev.nebalus.nasadaily.helper.FileHelper;
 import dev.nebalus.library.jlogger.Logger;
 
 import java.io.IOException;

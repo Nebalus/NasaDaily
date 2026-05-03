@@ -1,9 +1,9 @@
-package dev.nebalus.apod.ui;
+package dev.nebalus.nasadaily.ui;
 
-import dev.nebalus.apod.repository.CacheRepository;
-import dev.nebalus.apod.Client;
-import dev.nebalus.apod.Entry;
-import dev.nebalus.apod.Importer;
+import dev.nebalus.nasadaily.repository.CacheRepository;
+import dev.nebalus.nasadaily.Client;
+import dev.nebalus.nasadaily.Entry;
+import dev.nebalus.nasadaily.Importer;
 import dev.nebalus.library.jlogger.LogLevel;
 import dev.nebalus.library.jlogger.Logger;
 import dev.nebalus.library.jlogger.formatter.LineFormatter;

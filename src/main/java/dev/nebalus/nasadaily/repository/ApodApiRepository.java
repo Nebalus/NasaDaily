@@ -1,4 +1,4 @@
-package dev.nebalus.apod.repository;
+package dev.nebalus.nasadaily.repository;
 
 import java.io.BufferedReader;
 import java.io.IOException;

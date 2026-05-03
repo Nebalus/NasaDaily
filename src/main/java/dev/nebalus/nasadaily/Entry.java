@@ -1,4 +1,4 @@
-package dev.nebalus.apod;
+package dev.nebalus.nasadaily;
 
 import java.time.LocalDate;
 

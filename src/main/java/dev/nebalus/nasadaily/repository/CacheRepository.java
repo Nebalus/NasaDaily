@@ -1,6 +1,6 @@
-package dev.nebalus.apod.repository;
+package dev.nebalus.nasadaily.repository;
 
-import dev.nebalus.apod.Entry;
+import dev.nebalus.nasadaily.Entry;
 import dev.nebalus.library.jlogger.Logger;
 import org.json.JSONObject;
 

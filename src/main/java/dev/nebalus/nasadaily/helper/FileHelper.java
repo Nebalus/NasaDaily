@@ -1,4 +1,4 @@
-package dev.nebalus.apod.helper;
+package dev.nebalus.nasadaily.helper;
 
 public class FileHelper {
     public static String extractExtension(String url) {

@@ -1,4 +1,4 @@
-package dev.nebalus.apod.ui;
+package dev.nebalus.nasadaily.ui;
 
 import dev.nebalus.library.jlogger.LogLevel;
 import dev.nebalus.library.jlogger.LogRecord;

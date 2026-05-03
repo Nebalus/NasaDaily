@@ -1,4 +1,4 @@
-package dev.nebalus.apod.ui;
+package dev.nebalus.nasadaily.ui;
 
 import javax.swing.BorderFactory;
 import javax.swing.Box;
