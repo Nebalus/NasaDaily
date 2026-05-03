@@ -2,10 +2,7 @@ package dev.nebalus.nasadaily.repository;
 
 import dev.nebalus.nasadaily.Entry;
 import dev.nebalus.library.jlogger.Logger;
-import org.json.JSONObject;
-
 import java.io.IOException;
-import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.sql.Connection;
@@ -40,7 +37,6 @@ public class CacheRepository {
         this.jdbcUrl = "jdbc:sqlite:" + dbFile.toAbsolutePath();
         
         initDatabase();
-        migrateJsonFiles();
     }
 
     private void initDatabase() {
@@ -61,39 +57,6 @@ public class CacheRepository {
         }
     }
 
-    private void migrateJsonFiles() {
-        int migrated = 0;
-
-        try (DirectoryStream<Path> stream = Files.newDirectoryStream(cacheDir, "*.json")) {
-            for (Path jsonFile : stream) {
-                try {
-                    String content = Files.readString(jsonFile);
-                    JSONObject json = new JSONObject(content);
-
-                    Entry entry = new Entry(
-                        LocalDate.parse(json.getString("date"), DATE_FORMAT),
-                        json.optString("title", "Untitled"),
-                        json.optString("media_type", "image"),
-                        json.optString("url", ""),
-                        json.has("hdurl") && !json.isNull("hdurl") ? json.getString("hdurl") : null,
-                        json.optString("explanation", "")
-                    );
-
-                    put(entry);
-                    Files.delete(jsonFile);
-                    migrated++;
-                } catch (Exception e) {
-                    logger.warning("Failed to migrate " + jsonFile.getFileName() + ": " + e.getMessage());
-                }
-            }
-        } catch (IOException e) {
-            logger.warning("Could not scan for JSON cache files: " + e.getMessage());
-        }
-
-        if (migrated > 0) {
-            logger.info("Migrated " + migrated + " JSON cache files to SQLite");
-        }
-    }
 
     public Entry get(LocalDate date) {
         String sql = "SELECT date, title, mediaType, url, hdurl, explanation FROM apod_entries WHERE date = ?";
