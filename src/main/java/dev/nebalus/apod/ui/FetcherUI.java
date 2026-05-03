@@ -56,7 +56,7 @@ public class FetcherUI extends JFrame {
     private static final Color FG_TEXT = new Color(220, 220, 220);
     private static final Color ACCENT = new Color(70, 130, 220);
 
-    private final Logger logger = new Logger("APODFetcher");
+    private final Logger logger = new Logger("NasaDaily");
     private final CacheRepository cache = new CacheRepository(CACHE_DIR, logger);
     private final Client client = new Client(API_KEY, logger, cache);
     private final Importer importer = new Importer(OUTPUT_DIR, logger);
@@ -75,7 +75,7 @@ public class FetcherUI extends JFrame {
     private int currentIndex = -1;
 
     public FetcherUI() {
-        super("APODFetcher");
+        super("NasaDaily");
         setupDarkTheme();
         setupLogger();
         buildUI();

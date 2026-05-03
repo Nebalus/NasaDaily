@@ -39,14 +39,15 @@ public class ApodCore {
         }
 
         System.out.println(
-            " _    ____   ___  ____  _____    _       _               \n" +
-            "/ \\  |  _ \\ / _ \\|  _ \\|  ___|__| |_ ___| |__   ___ _ __ \n" +
-            "  / _ \\ | |_) | | | | | | | |_ / _ \\ __/ __| '_ \\ / _ \\ '__|\n" +
-            " / ___ \\|  __/| |_| | |_| |  _|  __/ || (__| | | |  __/ |   \n" +
-            "/_/   \\_\\_|    \\___/|____/|_|  \\___|\\__\\___|_| |_|\\___|_|   "
+            " _   _                   ____        _ _       \n" +
+            "| \\ | | __ _ ___ __ _   |  _ \\  __ _(_) |_   _ \n" +
+            "|  \\| |/ _` / __/ _` |  | | | |/ _` | | | | | |\n" +
+            "| |\\  | (_| \\__ \\ (_| | | |_| | (_| | | | |_| |\n" +
+            "|_| \\_|\\__,_|___/\\__,_| |____/ \\__,_|_|_|\\__, |\n" +
+            "                                         |___/ "
         );
 
-        Logger logger = new Logger("APODFetcher");
+        Logger logger = new Logger("NasaDaily");
 
         SyslogHandler handler = new SyslogHandler(LogLevel.DEBUG, false);
         handler.setFormatter(new ColorLineFormatter(new DefaultColorScheme(), null, "HH:mm:ss"));
