@@ -17,7 +17,6 @@ NasaDaily is a Java 21 desktop application for fetching, downloading, and managi
 | **HD Image Preference** | Automatically prefers the `hdurl` field over the standard URL when available |
 | **Video Support** | Non-image APODs (e.g. YouTube embeds) are saved as `.url` shortcut files |
 | **Swing GUI** | Dark-themed graphical interface with image preview, calendar-based import, and embedded log viewer |
-| **Legacy Migration** | Automatically migrates old JSON cache files to SQLite on first run |
 
 ---
 
